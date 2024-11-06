@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta name="刘忠雨" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+.yijicaidan>li{
+ list-style: none;
+float: left;
+background-color: rgb(240, 108, 7);
+ margin:0px 3px;
+width: 80px;
+height: 40px;
+display: flex;
+justify-content: center;
+ align-items: center;
+ position: relative;
+}
+ a{
+font-size: 20px;
+color: rgb(7, 65, 255);
+text-decoration: none;
+}
+ .yijihezi{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+ .erjihezi{
+ position: absolute;
+left: 81px;
+list-style: none;
+background-color: rgb(10, 129, 233);
+width: 80px;
+border-radius: 8px;
+display: none;
+z-index: 1000;
+}
+.erjicaidan{
+ padding: 0px;
+}
+.erjicaidan>li{
+ width: 80;
+ height: 30px;
+margin: 0px 18px;
+ display: block;
+ align-items: center;
+}
+.yijicaidan>li:hover>.erjihezi{
+display: block;
+}
+ </style>
+</head>
+<body>
+<div class="yijihezi">
+ <ul class="yijicaidan">
+ <li>
+ 娱乐
+</li>
+<li>
+科技
+ <div class="erjihezi">
+<ul class="erjicaidan">
+<li>数码</li>
+<li>手机</li>
+<li>电脑</li>
+</ul>
+</div>
+</li>
+<li>
+美食
+</li>
+</ul>
+</div>
+</body>
+</html>
